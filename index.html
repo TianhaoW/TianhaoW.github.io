@@ -1,55 +1,89 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Tianhao's Homepage</title>
-        <meta name = "author" content = "Tianhao Wang"/>
-    </head>
-    <body>
-        <h1> Tianhao Wang </h1>
-        <hr/>
-        
-        <dl>
-            <dt> Teaching: </dt>
-            <dd> Couse Link: </dd>
-            <dd> Office: </dd>
-            <dd> Office Hours: </dd>
-            <dd> Email: </dd>
-        </dl>
-        <p>It is very time-consuming to type math symbols in email, so I will not discuss math problems via email unless you just want a short hint. If you have any math questions, please ask me during sections or come to my office hours.</p>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name = "author" content = "Tianhao Wang"/>
+    <link type="text/css" rel="stylesheet" href="template.css">
+    <title>Tianhao's Homepage</title>
+</head>
+<body>
+<div id="Container">
+    <div id="Banner">
+        <p id="Date">Last Edited</p>
+        <h1>Tianhao Wang</h1>
+        <h3>Ph.D in Mathematics (Pure)</h3>
+        <h3>University of California Irvine</h3>
+    </div>
+    <script >
+        const lastEdit = document.getElementById("Date");
+        const months = ["Jan", "Feb", "Mar","Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+        let time = new Date(document.lastModified);
+        lastEdit.innerHTML = "Last Edited: " + months[time.getMonth()] + " " + time.getDate() + ", "
+            + time.getFullYear();
+        //lastEdit.innerHTML = "Last Edited: " + document.lastModified +"";
+    </script>
 
-        <dl>
-            <dt> Interest: </dt>
-            <dd> Algebra, Algebraic Number Theory</dd>
-        </dl>
+    <div id="Display">
+        <div id="Navigator">
+            <p>Navigator:</p>
+            <ul>
+                <li><a href="index.html">Homepage</a></li>
+                <li><a href="notes.html">Notes</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="game_dev.html">Game Development</a></li>
+                <li><a href="CV.pdf">CV</a></li>
+            </ul>
+            <hr/>
+            <p>Good Resources:</p>
+            <ul>
+                <li><a href="https://courses.maths.ox.ac.uk/overview/undergraduate#43995" target="_blank">Oxford Math Courses</a> </li>
+                <li><a href="https://www.overleaf.com" target="_blank">Overleaf (Latex Editor)</a> </li>
+                <li><a href="https://www.math.ucla.edu/~chparkin/gre.html" target="_blank">GRE Math Sub Review</a> </li>
+            </ul>
+        </div>
+        <div id="Content">
+            <h5>Contact: </h5>
+            <p>
+                <b>Teaching:</b> <br/>
+                <b>Office:</b> <br/>
+                <b>Office Hours:</b> <br/>
+                <b>Email:</b> tiw069@ucsd.edu (valid until June 2020)
+            </p>
+            <p>
+                It is very time-consuming to type math symbols in email, so I will not discuss math problems via email
+                unless you just want a short hint. If you have any math questions, please ask me during sections or come
+                to my office hours.
+            </p>
+            <hr/>
+            <h5>Currently Working on: </h5>
+            <ul>
+                <li>I am currently developing a 2D pixel action RPG: "Become Witch"</li>
+            </ul>
+            <hr/>
+            <h5>Past Teaching Experience: </h5>
+            <h6>2019 at UC San Diego: </h6>
+            <ul>
+                <li><b>Fall</b> Math 105: Intro to Number Theory, Math 20E: Vector Calculus II</li>
+                <li><b>Summer II</b> Math 105: Intro to Number Theory</li>
+                <li><b>Summer I</b> Math 142A: Intro to Analysis (Grader)</li>
+                <li><b>Spring</b> Math 20E: Vector Calculus II</li>
+                <li><b>Winter</b> Math 20E: Vector Calculus II</li>
+            </ul>
+            <h6>2018 at UC San Diego: </h6>
+            <ul>
+                <li><b>Fall</b> Math 20C: Vector Calculus I</li>
+                <li><b>Spring</b> Math 20C: Vector Calculus I</li>
+                <li><b>Winter</b> Math 18: Linear Algebra</li>
+            </ul>
+            <h6>2017 at UC San Diego: </h6>
+            <ul>
+                <li><b>Fall</b> Math 18: Linear Algebra</li>
+                <li><b>Spring</b> Math 18: Linear Algebra</li>
+                <li><b>Winter</b> Math 18: Linear Algebra</li>
+            </ul>
+        </div>
+    </div>
+</div>
 
-        <dl>
-            <dt> Notes: </dt>            
-        </dl>
-
-
-        <dl>
-            <dt>Independent Game Development: </dt>
-            <dd><a href = game_dev.html>Become Witch </a> (Using C++ and SDL2 library)</dd>
-        </dl>
-
-        <dl>
-            <dt> Pre-Prints: </dt>
-            <dd> <a href = "https://arxiv.org/abs/1910.13666">Explicit Description of Centralizers for a Matrix in arbitary field k</a> (a very trivial paper) </dd>
-        </dl>
-        
-        <dl>
-            <dt> Good Resources for Studying Math: </dt>
-            <dd> </dd>
-        </dl>
-
-        <dl>
-            <dt>About me: </dt>
-            <dd>
-                <a href = "CV.pdf">CV </a>      
-            </dd>
-        </dl>
-
-
-
-    </body>
+</body>
 </html>
