@@ -89,7 +89,14 @@ body{
     text-decoration: underline;
 }
 
-
+#ContentNoNav{
+    background:whitesmoke;
+    height: 100%;
+    min-height: 478px;
+    width: 880px;
+    margin:0;
+    padding: 5px 10px 0 10px;
+}
 
 #Content{
     background:whitesmoke;
@@ -101,24 +108,24 @@ body{
 
 }
 
-#Content p {
+#Content p,#ContentNoNav p {
     text-indent: 0;
     margin: 0 0 10px 10px;
 }
 
-#Content h5 {
+#Content h5, #ContentNoNav h5 {
     margin: 0;
     padding: 0;
     font-size: 20px;
 }
 
-#Content h6 {
+#Content h6, #ContentNoNav h6 {
     margin: 0 0 0 10px;
     padding: 0;
     font-size: 17px;
 }
 
-#Content ul {
+#Content ul, #ContentNoNav ul {
     margin-top: 0;
 }
 
