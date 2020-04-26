@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name = "author" content = "Tianhao Wang"/>
+    <link type="text/css" rel="stylesheet" href="../template.css">
+    <title>Become Witch</title>
+</head>
+<body>
+
+<div id="Container">
+    <div id="Banner">
+        <p id="Date">Last Edited: Apr 15, 2020</p>
+        <h1>Become Witch</h1>
+        <h3>2D platform action RPG</h3>
+        <h3>Developed by C++ and SDL library</h3>
+        <div style="float: left; margin: 0 0 -10px 0;" >
+            <img src="Images/1.gif" alt="running" style="display: inline">
+            <img src="../running.gif" alt="running" style="display: inline">
+        </div>
+        <div style="float: left;margin: -74px 0 -20px 250px;">
+            <img src="Images/6R.gif" alt="running" style="display: inline-block; position: relative; top:10px">
+            <img src="Images/4R.gif" alt="running" style="display: inline">
+            <img src="Images/5R.gif" alt="running" style="display: inline">
+            <img src="Images/2R.gif" alt="running" style="display: inline">
+            <img src="Images/3R.gif" alt="running" style="display: inline">
+        </div>
+
+        <script >
+            const lastEdit = document.getElementById("Date");
+            const months = ["Jan", "Feb", "Mar","Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+            let time = new Date(document.lastModified);
+            lastEdit.innerHTML = "Last Edited: " + months[time.getMonth()] + " " + time.getDate() + ", "
+                + time.getFullYear();
+            //lastEdit.innerHTML = "Last Edited: " + document.lastModified +"";
+        </script>
+    </div>
+
+    <div id="Display" style="clear:left">
+        <div id="Navigator">
+            <p>Navigator: </p>
+            <ul>
+                <li><a href="game_dev.html">Homepage</a></li>
+                <li><a href="Media.html">Media</a> </li>
+                <li><a href="Future_Updates.html">Future Updates</a> </li>
+                <li><a href="Spell_Design.html">Spell Design</a> </li>
+            </ul>
+            <hr/>
+            <p>Other: </p>
+            <ul>
+                <li><a href="../index.html">Tianhao's Homepage</a> </li>
+            </ul>
+        </div>
+        <div id="Content">
+            <h5>Media: </h5>
+            <ul>
+                <li>Facebook: </li>
+                <li>Twitter: </li>
+                <li>Itch.io: </li>
+                <li>Weibo (Mandarin): </li>
+                <li>Tieba (Mandarin): </li>
+                <li>QQ Group (Mandarin): </li>
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+</html>

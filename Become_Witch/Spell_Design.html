@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name = "author" content = "Tianhao Wang"/>
+    <link type="text/css" rel="stylesheet" href="../template.css">
+    <title>Become Witch</title>
+</head>
+<body>
+
+<div id="Container">
+    <div id="Banner">
+        <p id="Date">Last Edited: Apr 15, 2020</p>
+        <h1>Become Witch</h1>
+        <h3>2D platform action RPG</h3>
+        <h3>Developed by C++ and SDL library</h3>
+        <div style="float: left; margin: 0 0 -10px 0;" >
+            <img src="Images/1.gif" alt="running" style="display: inline">
+            <img src="../running.gif" alt="running" style="display: inline">
+        </div>
+        <div style="float: left;margin: -74px 0 -20px 250px;">
+            <img src="Images/6R.gif" alt="running" style="display: inline-block; position: relative; top:10px">
+            <img src="Images/4R.gif" alt="running" style="display: inline">
+            <img src="Images/5R.gif" alt="running" style="display: inline">
+            <img src="Images/2R.gif" alt="running" style="display: inline">
+            <img src="Images/3R.gif" alt="running" style="display: inline">
+        </div>
+        <script >
+            const lastEdit = document.getElementById("Date");
+            const months = ["Jan", "Feb", "Mar","Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+            let time = new Date(document.lastModified);
+            lastEdit.innerHTML = "Last Edited: " + months[time.getMonth()] + " " + time.getDate() + ", "
+                + time.getFullYear();
+            //lastEdit.innerHTML = "Last Edited: " + document.lastModified +"";
+        </script>
+    </div>
+
+
+    <div id="Display" style="clear:left">
+        <div id="Navigator">
+            <p>Navigator: </p>
+            <ul>
+                <li><a href="game_dev.html">Homepage</a></li>
+                <li><a href="Media.html">Media</a> </li>
+                <li><a href="Future_Updates.html">Future Updates</a> </li>
+                <li><a href="Spell_Design.html">Spell Design</a> </li>
+            </ul>
+            <hr/>
+            <p>Other: </p>
+            <ul>
+                <li><a href="../index.html">Tianhao's Homepage</a> </li>
+            </ul>
+        </div>
+        <div id="Content">
+            <h5>Spell Design: </h5>
+            <h6>Sword Fluency: (each level increases sword skill damage by 10%)</h6>
+            <ul>
+                <li>Level 1: Roll has one more charge / Roll's cooldown reduced by 3 sec</li>
+                <li>Level 2: Gain air jump ability</li>
+                <li>Level 3: Gain air dash ability</li>
+                <li>Level 4: Gain quick slash ability</li>
+                <li>Level 5: Gain air attack ability</li>
+                <li>Level 6: Gain crescent slash ability</li>
+                <li>Level 7: Gain some ability (I have not decided yet)</li>
+                <li>Level 8: Reduce all sword skill cooldown by 20%</li>
+                <li>Level 9: Basic attack can hit projectiles back</li>
+                <li>Level 10: Immune to hit stun</li>
+            </ul>
+            <h6>Magic Fluency: (each level increases magic skill damage by 5%)</h6>
+            <h6>Fire (Highest Dot damage): </h6>
+            <ul>
+                <li>Karma (Require Fire level 10): <br/>
+                </li>
+            </ul>
+            <h6>Ice (Slow and Freeze Enemy)</h6>
+            <ul>
+
+            </ul>
+            <h6>Life (Healing)</h6>
+            <ul>
+                <li>Balance of Life (Require Life spell level 1): <br/>
+                    Consume 20% HP and Heal 6HP per second for 5 second. The effect disappear if Lunaria got
+                    Hit by enemies.</li>
+                <li>Revive (Require Life spell level 9): <br/>
+                    If Lunaria is dead within 10 seconds after using this spell, she will revive with 10 HP, and invincible
+                    for 1 second.</li>
+                <li>Phoenix Blood (Require Life spell level 10, Fire spell level 5): <br/>
+                    Burn all HP to 0 and deals 120 * (1 + percentage of HP lost) damage to all enemies nearby. Revive with
+                    (10 + 3% * damage dealt by this spell) HP</li>
+            </ul>
+            <h6>Death (Powerful spells which consumes HP)</h6>
+            <h6>Dark (Highest damage but consume souls and high cooldown)</h6>
+            <ul>
+                <li>Reaper (): <br/>
+                    Reset cooldown and increase damage if enemy is killed by this spell</li>
+            </ul>
+            <h6>Light (Functional spells)</h6>
+            <ul>
+                <li>Shield (Require Light spell level 1): <br/>
+                    The shield will reduce the next incoming damage by 50%, and hit nearby enemy by 30.</li>
+                <li>Purify (Require Light spell level 3): <br/>
+                    Purify at most 3 debuffs. For each debuff purified, deals 40 damage to nearby enemy.</li>
+                <li>Field (Require Light spell level 5): <br/>
+                    Create a filed around yourself which absorbs projectiles</li>
+                <li>Mirror (Require Light spell level 4): <br/>
+                    Create a mirror which reflects all projectiles</li>
+                <li>Genisis (Require Light spell level 8, Dark spell level 8):<br/>
+                    Reset cooldown for all spells</li>
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+</html>
