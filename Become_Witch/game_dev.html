@@ -65,9 +65,12 @@
             <p>
                 Demo<br/>
                 Beta Demo: 
-                    <a onclick="ga('send', 'event', 'release', 'download', 'linux-release');" href="Release/Become_Witch_Linux.zip">Linux</a>, 
-                    <a onclick="ga('send', 'event', 'release', 'download', 'win32-release');" href="Release/Become_Witch_Win32.zip">Windows 32bit</a>, 
-                    <a onclick="ga('send', 'event', 'release', 'download', 'win64-release');" href="Release/Become_Witch_Win64.zip">Windows 64bit</a>
+                    <a onclick="gtag('event', 'download', {'event_category' : 'Release','event_label' : 'linux'
+});" href="Release/Become_Witch_Linux.zip">Linux</a>, 
+                    <a onclick="gtag('event', 'download', {'event_category' : 'Release','event_label' : 'win32'
+});" href="Release/Become_Witch_Win32.zip">Windows 32bit</a>, 
+                    <a onclick="gtag('event', 'download', {'event_category' : 'Release','event_label' : 'win64'
+});" href="Release/Become_Witch_Win64.zip">Windows 64bit</a>
             </p>
             <h5>Plans for GamePlay and Plot: </h5>
             <p>
