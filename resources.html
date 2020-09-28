@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name = "author" content = "Tianhao Wang"/>
+    <link type="text/css" rel="stylesheet" href="template.css">
+    <title>Tianhao's Homepage</title>
+</head>
+<body>
+<div id="Container">
+    <div id="Banner">
+        <p id="Date">Last Edited</p>
+        <h1>Tianhao Wang</h1>
+        <h3>1'st year Ph.D student in Mathematics (Pure)</h3>
+        <h3>University of California Irvine</h3>
+    </div>
+    <script >
+        const lastEdit = document.getElementById("Date");
+        const months = ["Jan", "Feb", "Mar","Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+        let time = new Date(document.lastModified);
+        lastEdit.innerHTML = "Last Edited: " + months[time.getMonth()] + " " + time.getDate() + ", "
+            + time.getFullYear();
+        //lastEdit.innerHTML = "Last Edited: " + document.lastModified +"";
+    </script>
+
+    <div id="Display">
+        <div id="Navigator">
+            <p>Navigator:</p>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="notes.html">Notes</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="Become_Witch/game_dev.html">Game Development</a></li>
+                <li><a href="CV.pdf">CV</a></li>
+            </ul>
+            <hr/>
+            <p>Other Links</p>
+        </div>
+        <div id="Content">
+            <h5>Online Math courses</h5>
+            <ul>
+                <li><a href="https://courses.maths.ox.ac.uk/overview/undergraduate#43995" target="_blank">Oxford Math Undergraduate Courses</a> </li>
+            </ul>
+            <h5>GRE Math Subject Test</h5>
+            <ul>
+                <li><a href="https://www.math.ucla.edu/~chparkin/gre.html" target="_blank">UCLA GRE Review</a> </li>
+                <li><a href="https://mathematicsgre.com/" target="_blank">Math GRE Forum</a></li>
+            </ul>
+            <h5>Tools</h5>
+            <ul>
+                <li><a href="https://www.overleaf.com" target="_blank">Overleaf: Online Latex Editor</a> </li>
+                <li><a href="https://detexify.kirelabs.org/classify.html" target="_blank">Detexify: Find Latex code by drawing the symbol</a> </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

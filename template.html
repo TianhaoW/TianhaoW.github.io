@@ -4,45 +4,44 @@
     <meta charset="UTF-8">
     <meta name = "author" content = "Tianhao Wang"/>
     <link type="text/css" rel="stylesheet" href="template.css">
-    <title>Title</title>
+    <title>Tianhao's Homepage</title>
 </head>
 <body>
+<div id="Container">
+    <div id="Banner">
+        <p id="Date">Last Edited</p>
+        <h1>Tianhao Wang</h1>
+        <h3>1'st year Ph.D student in Mathematics (Pure)</h3>
+        <h3>University of California Irvine</h3>
+    </div>
+    <script >
+        const lastEdit = document.getElementById("Date");
+        const months = ["Jan", "Feb", "Mar","Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+        let time = new Date(document.lastModified);
+        lastEdit.innerHTML = "Last Edited: " + months[time.getMonth()] + " " + time.getDate() + ", "
+            + time.getFullYear();
+        //lastEdit.innerHTML = "Last Edited: " + document.lastModified +"";
+    </script>
 
-    <div id="Container">
-        <div id="Banner">
-            <h1>Tianhao Wang</h1>
-            <h3>Ph.D in Mathematics (Pure)</h3>
-            <h3>University of California Irvine</h3>
-        </div>
-
+    <div id="Display">
         <div id="Navigator">
             <p>Navigator:</p>
             <ul>
-                <li><a href="#">Homepage</a></li>
-                <li><a href="#">Notes</a></li>
-                <li><a href="#">Research</a></li>
-                <li><a href="#">Game Development</a></li>
-                <li><a href="#">CV</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="notes.html">Notes</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="Become_Witch/game_dev.html">Game Development</a></li>
+                <li><a href="CV.pdf">CV</a></li>
             </ul>
             <hr/>
-            <p>Good Resources:</p>
-            <ul>
-                <li>Oxford </li>
-            </ul>
+            <p>Other Links</p>
         </div>
         <div id="Content">
-            Teaching: <br/>
-            Office: <br/>
-            Office Hours: <br/>
-            Email:
-            <hr/>
-            <p>
-                It is very time-consuming to type math symbols in email, so I will not discuss math problems via email
-                unless you just want a short hint. If you have any math questions, please ask me during sections or come
-                to my office hours.
-            </p>
+
         </div>
     </div>
+</div>
 
 </body>
 </html>

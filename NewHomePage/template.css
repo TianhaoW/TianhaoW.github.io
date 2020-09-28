@@ -1,0 +1,80 @@
+body{
+    background:ghostwhite;
+    font-family: sans-serif;
+}
+
+
+#Banner{
+    background:whitesmoke;
+    border-bottom: crimson double 2px;
+}
+
+
+#Date {
+    font-size: 14px;
+}
+
+
+#MyNav nav a:link, #MyNav nav a:visited{
+    color:#004a87;
+    text-decoration: none;
+}
+
+
+#MyNav nav a:hover {
+    color:black;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+}
+
+#MyNav nav a.active {
+    color: black;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+}
+
+#MyNav{
+    background:whitesmoke;
+    border-right: crimson double 2px;
+}
+
+@media (max-width:767px) {
+    #MyNav
+    {
+        background:whitesmoke;
+        border-right: 0;
+        border-bottom: crimson double 2px;
+    }
+    #MyNav nav a:hover {
+        color:black;
+        border-top: 0;
+        border-bottom: 0;
+        border-left: 1px solid grey;
+        border-right: 1px solid grey;
+    }
+
+    #MyNav nav a.active {
+        color: black;
+        border-top: 0;
+        border-bottom: 0;
+        border-left: 1px solid grey;
+        border-right: 1px solid grey;
+    }
+}
+
+#Content {
+    background:whitesmoke;
+}
+
+#Content h5{
+    margin-left: -0.7rem;
+    font-weight: bold;
+}
+
+#Content h6{
+    font-weight: bold;
+}
+
+#Content b{
+    font-weight: 600;
+}

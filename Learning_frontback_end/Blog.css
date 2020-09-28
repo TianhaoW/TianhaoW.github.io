@@ -1,0 +1,29 @@
+body{
+    border: gray 10px solid;
+    padding: 20px;
+    max-width: 700px;
+    width: 80%;
+    margin: 20px auto;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.post{
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #2c3e50;
+    font-size: 2.0rem;
+}
+
+.quote {
+    border-left: gray 5px solid;
+    padding-left: 5px;
+}
+
+.Date {
+    color: #3498db;
+    text-transform: uppercase;
+    /*rem means relative size to the root, em is relative to parent*/
+    letter-spacing: 0.2rem;
+}
