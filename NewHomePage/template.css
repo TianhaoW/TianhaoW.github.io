@@ -1,8 +1,16 @@
+html {
+    height: 100%;
+}
+
 body{
     background:ghostwhite;
     font-family: sans-serif;
+    height: 100%;
 }
 
+.FullHeight {
+    min-height: 100vh;
+}
 
 #Banner{
     background:whitesmoke;
@@ -11,9 +19,8 @@ body{
 
 
 #Date {
-    font-size: 14px;
+    font-size: 0.875rem;
 }
-
 
 #MyNav nav a:link, #MyNav nav a:visited{
     color:#004a87;
@@ -36,6 +43,23 @@ body{
 #MyNav{
     background:whitesmoke;
     border-right: crimson double 2px;
+}
+
+#Body .row{
+    background:whitesmoke;
+}
+
+ul {
+    padding-inline-start: 2.5rem;
+}
+
+@media (max-width: 445px) {
+    html {
+        font-size: 10px;
+    }
+    ul {
+        padding-inline-start: 1.8rem;
+    }
 }
 
 @media (max-width:767px) {
