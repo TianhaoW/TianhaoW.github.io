@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name = "author" content = "Tianhao Wang"/>
+    <link type="text/css" rel="stylesheet" href="template.css">
+    <title>Tianhao's Homepage</title>
+</head>
+<body>
+<div id="Container">
+    <div id="Banner">
+        <p id="Date">Last Edited</p>
+        <h1>Tianhao Wang</h1>
+        <h3>1'st year Ph.D student in Mathematics (Pure)</h3>
+        <h3>University of California Irvine</h3>
+    </div>
+    <script >
+        const lastEdit = document.getElementById("Date");
+        const months = ["Jan", "Feb", "Mar","Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+        let time = new Date(document.lastModified);
+        lastEdit.innerHTML = "Last Edited: " + months[time.getMonth()] + " " + time.getDate() + ", "
+            + time.getFullYear();
+        //lastEdit.innerHTML = "Last Edited: " + document.lastModified +"";
+    </script>
+
+    <div id="Display">
+        <div id="Navigator">
+            <p>Navigator:</p>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="notes.html">Notes</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="../Become_Witch/game_dev.html">Game Development</a></li>
+                <li><a href="../CV.pdf">CV</a></li>
+            </ul>
+            <hr/>
+            <p>Other Links</p>
+            <ul>
+                <li><a href="../index.html">New Homepage</a> </li>
+            </ul>
+        </div>
+        <div id="Content">
+            <h5>Contact: </h5>
+            <p>
+                <b>Teaching:</b> <br/>
+                <b>Office:</b> <br/>
+                <b>Office Hours:</b> <br/>
+                <b>Email:</b> tianhw11@uci.edu
+            </p>
+            <p>
+                It is very time-consuming to type math symbols in email, so I will not discuss math problems via email.
+                Should you have any math questions, please ask me during discussion sections or come to my office hours.
+            </p>
+            <hr/>
+            <h5>Currently Working on: </h5>
+            <ul>
+                <li>Rebuilding the website with Bootstrap to make it mobile friendly</li>
+                <li>Add support for interactive notes created with obsidian</li>
+            </ul>
+            <hr/>
+            <h5>Past Teaching Experience: </h5>
+            <p>I have been serving as teaching assistant and grader for the following courses: </p>
+            <h6>2020-2021 at UC Irvine</h6>
+            <ul>
+                <li>On department fellowship. No teaching this year</li>
+            </ul>
+            <h6>2019-2020 at UC San Diego: </h6>
+            <ul>
+                <li><b>Fall</b> Math 105: Intro to Number Theory, Math 20E: Vector Calculus II</li>
+                <li><b>Summer II</b> Math 105: Intro to Number Theory</li>
+                <li><b>Summer I</b> Math 142A: Intro to Analysis (Grader)</li>
+                <li><b>Spring</b> Math 20E: Vector Calculus II</li>
+                <li><b>Winter</b> Math 20E: Vector Calculus II</li>
+            </ul>
+            <h6>2018-2019 at UC San Diego: </h6>
+            <ul>
+                <li><b>Fall</b> Math 20C: Vector Calculus I</li>
+                <li><b>Spring</b> Math 20C: Vector Calculus I</li>
+                <li><b>Winter</b> Math 18: Linear Algebra</li>
+            </ul>
+            <h6>2017-2018 at UC San Diego: </h6>
+            <ul>
+                <li><b>Fall</b> Math 18: Linear Algebra</li>
+                <li><b>Spring</b> Math 18: Linear Algebra</li>
+                <li><b>Winter</b> Math 18: Linear Algebra</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

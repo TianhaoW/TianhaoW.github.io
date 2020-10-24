@@ -1,0 +1,133 @@
+body{
+    background:ghostwhite;
+    margin:0;
+    padding:0;
+    font-family: sans-serif;
+}
+
+
+#Container{
+    margin:0 auto;
+    padding:0;
+    width:900px;
+    height:100%;
+    text-align:left;
+    background:ghostwhite;
+}
+
+#Banner{
+    margin:0;
+    padding:5px 0 20px 15px;
+    background:whitesmoke;
+    border-bottom: crimson double 2px;
+    width:885px;
+}
+
+#Banner h1{
+    margin:0;
+}
+
+#Date {
+    float:right;
+    margin: 0;
+    padding-top: 95px;
+    padding-right: 10px;
+    font-size: 14px;
+}
+
+#Banner h3{
+    margin:0;
+    font-style: normal;
+    font-weight: normal;
+}
+
+#Display {
+    display: flex;
+}
+
+#Navigator{
+    width:180px;
+    min-height: 478px;
+    background:whitesmoke;
+    margin:0;
+    padding:5px 0 0 0;
+
+    border-right: crimson double 2px;
+}
+
+#Navigator p{
+    margin:0;
+    padding:0;
+    font-size: 16px;
+    font-weight: bold;
+    border-bottom: black dotted 1px;
+}
+
+#Navigator ul{
+    list-style-type: none;
+    padding:5px 0 0 10px;
+    margin:0;
+}
+
+#Navigator ul li{
+    height:30px;
+}
+
+#Navigator ul li a{
+    <!--display: block;-->
+}
+
+#Navigator ul li a:link, #Navigator ul li a:visited{
+    color:#004a87;
+    text-decoration: none;
+}
+
+#Navigator ul li a:hover{
+    color:black;
+    text-decoration: underline;
+}
+
+#ContentNoNav{
+    background:whitesmoke;
+    height: 100%;
+    min-height: 478px;
+    width: 880px;
+    margin:0;
+    padding: 5px 10px 0 10px;
+}
+
+#Content{
+    background:whitesmoke;
+    height:100%;
+    min-height: 478px;
+    width: 698px;
+    margin:0;
+    padding:5px 10px 0 10px;
+
+}
+
+#Content p,#ContentNoNav p {
+    text-indent: 0;
+    margin: 0 0 10px 10px;
+}
+
+#Content h5, #ContentNoNav h5 {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+
+#Content h6, #ContentNoNav h6 {
+    margin: 0 0 0 10px;
+    padding: 0;
+    font-size: 17px;
+}
+
+#Content ul, #ContentNoNav ul {
+    margin-top: 0;
+}
+
+#Footer {
+    clear: both;
+    text-align: right;
+}

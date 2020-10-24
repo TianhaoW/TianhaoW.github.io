@@ -2,92 +2,109 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name = "author" content = "Tianhao Wang"/>
-    <link type="text/css" rel="stylesheet" href="template.css">
+    <meta name="author" content="Tianhao Wang"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="template.css">
     <title>Tianhao's Homepage</title>
 </head>
 <body>
-<div id="Container">
-    <div id="Banner">
-        <p id="Date">Last Edited</p>
-        <h1>Tianhao Wang</h1>
-        <h3>1'st year Ph.D student in Mathematics (Pure)</h3>
-        <h3>University of California Irvine</h3>
-    </div>
-    <script >
-        const lastEdit = document.getElementById("Date");
-        const months = ["Jan", "Feb", "Mar","Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
-        let time = new Date(document.lastModified);
-        lastEdit.innerHTML = "Last Edited: " + months[time.getMonth()] + " " + time.getDate() + ", "
-            + time.getFullYear();
-        //lastEdit.innerHTML = "Last Edited: " + document.lastModified +"";
-    </script>
+<div class="container">
+    <div class="row justify-content-around">
+        <div class="col-12 col-lg-10 d-flex flex-column FullHeight">
+            <section id="Banner" class="pt-3 pb-1 row justify-content-between">
+                <div id="Name" class="col-lg-9">
+                    <h1 class="mb-2">Tianhao Wang</h1>
+                    <h5 class="mb-0">1'st year Ph.D student in Mathematics (Pure)</h5>
+                    <h5 class="m-0">University of California Irvine</h5>
+                </div>
+                <div id="Last_Edit" class="align-self-end text-right col-lg-3" >
+                    <p id="Date" class="mb-0">Last Edited</p>
+                </div>
 
-    <div id="Display">
-        <div id="Navigator">
-            <p>Navigator:</p>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="notes.html">Notes</a></li>
-                <li><a href="research.html">Research</a></li>
-                <li><a href="resources.html">Resources</a></li>
-                <li><a href="Become_Witch/game_dev.html">Game Development</a></li>
-                <li><a href="CV.pdf">CV</a></li>
-            </ul>
-            <hr/>
-            <p>Other Links</p>
-            <ul>
-                <li><a href="NewHomePage/index.html">New Homepage</a> </li>
-            </ul>
-        </div>
-        <div id="Content">
-            <h5>Contact: </h5>
-            <p>
-                <b>Teaching:</b> <br/>
-                <b>Office:</b> <br/>
-                <b>Office Hours:</b> <br/>
-                <b>Email:</b> tianhw11@uci.edu
-            </p>
-            <p>
-                It is very time-consuming to type math symbols in email, so I will not discuss math problems via email.
-                Should you have any math questions, please ask me during discussion sections or come to my office hours.
-            </p>
-            <hr/>
-            <h5>Currently Working on: </h5>
-            <ul>
-                <li>Rebuilding the website with Bootstrap to make it mobile friendly</li>
-                <li>Add support for interactive notes created with obsidian</li>
-            </ul>
-            <hr/>
-            <h5>Past Teaching Experience: </h5>
-            <p>I have been serving as teaching assistant and grader for the following courses: </p>
-            <h6>2020-2021 at UC Irvine</h6>
-            <ul>
-                <li>On department fellowship. No teaching this year</li>
-            </ul>
-            <h6>2019-2020 at UC San Diego: </h6>
-            <ul>
-                <li><b>Fall</b> Math 105: Intro to Number Theory, Math 20E: Vector Calculus II</li>
-                <li><b>Summer II</b> Math 105: Intro to Number Theory</li>
-                <li><b>Summer I</b> Math 142A: Intro to Analysis (Grader)</li>
-                <li><b>Spring</b> Math 20E: Vector Calculus II</li>
-                <li><b>Winter</b> Math 20E: Vector Calculus II</li>
-            </ul>
-            <h6>2018-2019 at UC San Diego: </h6>
-            <ul>
-                <li><b>Fall</b> Math 20C: Vector Calculus I</li>
-                <li><b>Spring</b> Math 20C: Vector Calculus I</li>
-                <li><b>Winter</b> Math 18: Linear Algebra</li>
-            </ul>
-            <h6>2017-2018 at UC San Diego: </h6>
-            <ul>
-                <li><b>Fall</b> Math 18: Linear Algebra</li>
-                <li><b>Spring</b> Math 18: Linear Algebra</li>
-                <li><b>Winter</b> Math 18: Linear Algebra</li>
-            </ul>
+                <script >
+                    const lastEdit = document.getElementById("Date");
+                    const months = ["Jan", "Feb", "Mar","Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+                    let time = new Date(document.lastModified);
+                    lastEdit.innerHTML = "Last Edited: " + months[time.getMonth()] + " " + time.getDate() + ", "
+                        + time.getFullYear();
+                    //lastEdit.innerHTML = "Last Edited: " + document.lastModified +"";
+                </script>
+
+            </section>
+            <section id="Body" class="d-flex flex-column flex-grow-1">
+                <div class="row flex-grow-1 align-content-start align-content-md-stretch">
+                    <div id="MyNav" class="col-md-2 px-0 align-self-start align-self-md-stretch">
+                        <nav class="nav flex-md-column justify-content-between">
+                            <a class="nav-link px-2 px-md-3 active flex-fill" href="index.html">Home</a>
+                            <a class="nav-link px-2 px-md-3 flex-fill" href="notes.html">Notes</a>
+                            <a class="nav-link px-2 px-md-3 flex-fill" href="research.html">Research</a>
+                            <a class="nav-link px-2 px-md-3 flex-fill" href="resources.html">Resources</a>
+                            <a class="nav-link px-2 px-md-3 flex-fill" href="Become_Witch/game_dev.html">Game Dev</a>
+                            <a class="nav-link px-2 px-md-3 flex-fill" href="CV.pdf" target="_blank">CV</a>
+                        </nav>
+                    </div>
+                    <div id="Content" class="col-md-10 pt-2 pl-4">
+                        <h5>Contact: </h5>
+                        <p>
+                            <b>Teaching:</b> <br/>
+                            <b>Office:</b> <br/>
+                            <b>Office Hours:</b> <br/>
+                            <b>Email:</b> tianhw11@uci.edu
+                        </p>
+                        <p>
+                            It is very time-consuming to type math symbols in emails, so I will not discuss math problems via email.
+                            Should you have any math questions, please ask me during discussion sections or come to my office hours.
+                        </p>
+                        <hr/>
+                        <h5>Currently Working on: </h5>
+                        <ul>
+                            <li>Taking Analysis, Algebraic Geometry, Algebraic Topology, Algebraic Number Theory this year</li>
+                            <li>Rebuilding the website with Bootstrap to make it mobile friendly</li>
+                            <li>Adding support for interactive notes created with obsidian</li>
+                            <li>Working on the independent game and rebuild the website for it</li>
+                        </ul>
+                        <hr/>
+                        <h5>Past Teaching Experience: </h5>
+                        <p>I have been serving as teaching assistant and grader for the following courses: </p>
+                        <h6>2020-2021 at UC Irvine</h6>
+                        <ul>
+                            <li>On department fellowship. No teaching this year</li>
+                        </ul>
+                        <h6>2019-2020 at UC San Diego: </h6>
+                        <ul>
+                            <li><b>Fall</b> Math 105: Intro to Number Theory, Math 20E: Vector Calculus II</li>
+                        </ul>
+                        <h6>2018-2019 at UC San Diego: </h6>
+                        <ul>
+                            <li><b>Summer II</b> Math 105: Intro to Number Theory</li>
+                            <li><b>Summer I</b> Math 142A: Intro to Analysis (Grader)</li>
+                            <li><b>Spring</b> Math 20E: Vector Calculus II</li>
+                            <li><b>Winter</b> Math 20E: Vector Calculus II</li>
+                            <li><b>Fall</b> Math 20C: Vector Calculus I</li>
+                        </ul>
+                        <h6>2017-2018 at UC San Diego: </h6>
+                        <ul>
+                            <li><b>Spring</b> Math 20C: Vector Calculus I</li>
+                            <li><b>Winter</b> Math 18: Linear Algebra</li>
+                            <li><b>Fall</b> Math 18: Linear Algebra</li>
+                        </ul>
+                        <h6>2016-2017 at UC San Diego </h6>
+                        <ul>
+                            <li><b>Spring</b> Math 18: Linear Algebra</li>
+                            <li><b>Winter</b> Math 18: Linear Algebra</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
         </div>
     </div>
+
 </div>
 
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 </body>
 </html>

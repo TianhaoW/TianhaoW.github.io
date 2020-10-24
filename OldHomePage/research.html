@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name = "author" content = "Tianhao Wang"/>
+    <link type="text/css" rel="stylesheet" href="template.css">
+    <title>Tianhao's Homepage</title>
+</head>
+<body>
+<div id="Container">
+    <div id="Banner">
+        <p id="Date">Last Edited</p>
+        <h1>Tianhao Wang</h1>
+        <h3>1'st year Ph.D student in Mathematics (Pure)</h3>
+        <h3>University of California Irvine</h3>
+    </div>
+    <script >
+        const lastEdit = document.getElementById("Date");
+        const months = ["Jan", "Feb", "Mar","Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+        let time = new Date(document.lastModified);
+        lastEdit.innerHTML = "Last Edited: " + months[time.getMonth()] + " " + time.getDate() + ", "
+            + time.getFullYear();
+        //lastEdit.innerHTML = "Last Edited: " + document.lastModified +"";
+    </script>
+
+    <div id="Display">
+        <div id="Navigator">
+            <p>Navigator:</p>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="notes.html">Notes</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="../Become_Witch/game_dev.html">Game Development</a></li>
+                <li><a href="../CV.pdf">CV</a></li>
+            </ul>
+            <hr/>
+            <p>Other Links</p>
+        </div>
+        <div id="Content">
+            <h5>Interest: </h5>
+            <p>I am mostly interested in Algebra and Algebraic Number Theory</p>
+            <h5>Pre-Prints: </h5>
+            <ul>
+                <li><a href="https://arxiv.org/abs/1910.13666" target="_blank">Explicit Description of Centralizers for a Matrix</a> (arxiv:1910.13666)</li>
+            </ul>
+
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

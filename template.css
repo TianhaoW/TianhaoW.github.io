@@ -1,133 +1,104 @@
-body{
-    background:ghostwhite;
-    margin:0;
-    padding:0;
-    font-family: sans-serif;
+html {
+    height: 100%;
 }
 
-
-#Container{
-    margin:0 auto;
-    padding:0;
-    width:900px;
-    height:100%;
-    text-align:left;
+body{
     background:ghostwhite;
+    font-family: sans-serif;
+    height: 100%;
+}
+
+.FullHeight {
+    min-height: 100vh;
 }
 
 #Banner{
-    margin:0;
-    padding:5px 0 20px 15px;
     background:whitesmoke;
     border-bottom: crimson double 2px;
-    width:885px;
 }
 
-#Banner h1{
-    margin:0;
-}
 
 #Date {
-    float:right;
-    margin: 0;
-    padding-top: 95px;
-    padding-right: 10px;
-    font-size: 14px;
+    font-size: 0.875rem;
 }
 
-#Banner h3{
-    margin:0;
-    font-style: normal;
-    font-weight: normal;
-}
-
-#Display {
-    display: flex;
-}
-
-#Navigator{
-    width:180px;
-    min-height: 478px;
-    background:whitesmoke;
-    margin:0;
-    padding:5px 0 0 0;
-
-    border-right: crimson double 2px;
-}
-
-#Navigator p{
-    margin:0;
-    padding:0;
-    font-size: 16px;
-    font-weight: bold;
-    border-bottom: black dotted 1px;
-}
-
-#Navigator ul{
-    list-style-type: none;
-    padding:5px 0 0 10px;
-    margin:0;
-}
-
-#Navigator ul li{
-    height:30px;
-}
-
-#Navigator ul li a{
-    <!--display: block;-->
-}
-
-#Navigator ul li a:link, #Navigator ul li a:visited{
+#MyNav nav a:link, #MyNav nav a:visited{
     color:#004a87;
     text-decoration: none;
 }
 
-#Navigator ul li a:hover{
+
+#MyNav nav a:hover {
     color:black;
-    text-decoration: underline;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
 }
 
-#ContentNoNav{
+#MyNav nav a.active {
+    color: black;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+}
+
+#MyNav{
     background:whitesmoke;
-    height: 100%;
-    min-height: 478px;
-    width: 880px;
-    margin:0;
-    padding: 5px 10px 0 10px;
+    border-right: crimson double 2px;
 }
 
-#Content{
+#Body .row{
     background:whitesmoke;
-    height:100%;
-    min-height: 478px;
-    width: 698px;
-    margin:0;
-    padding:5px 10px 0 10px;
-
 }
 
-#Content p,#ContentNoNav p {
-    text-indent: 0;
-    margin: 0 0 10px 10px;
+ul {
+    padding-inline-start: 2.5rem;
 }
 
-#Content h5, #ContentNoNav h5 {
-    margin: 0;
-    padding: 0;
-    font-size: 20px;
+@media (max-width: 445px) {
+    html {
+        font-size: 10px;
+    }
+    ul {
+        padding-inline-start: 1.8rem;
+    }
 }
 
-#Content h6, #ContentNoNav h6 {
-    margin: 0 0 0 10px;
-    padding: 0;
-    font-size: 17px;
+@media (max-width:767px) {
+    #MyNav
+    {
+        background:whitesmoke;
+        border-right: 0;
+        border-bottom: crimson double 2px;
+    }
+    #MyNav nav a:hover {
+        color:black;
+        border-top: 0;
+        border-bottom: 0;
+        border-left: 1px solid grey;
+        border-right: 1px solid grey;
+    }
+
+    #MyNav nav a.active {
+        color: black;
+        border-top: 0;
+        border-bottom: 0;
+        border-left: 1px solid grey;
+        border-right: 1px solid grey;
+    }
 }
 
-#Content ul, #ContentNoNav ul {
-    margin-top: 0;
+#Content {
+    background:whitesmoke;
 }
 
-#Footer {
-    clear: both;
-    text-align: right;
+#Content h5{
+    margin-left: -0.7rem;
+    font-weight: bold;
+}
+
+#Content h6{
+    font-weight: bold;
+}
+
+#Content b{
+    font-weight: 600;
 }
